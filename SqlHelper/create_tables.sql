@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS "messages" (
+	"date"	INTEGER NOT NULL,
+	"device"	TEXT NOT NULL,
+	"checksum"	TEXT NOT NULL,
+	"mode"	NUMERIC NOT NULL,
+	"message"	TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS "config" (
+	"key"	TEXT NOT NULL PRIMARY KEY,
+	"value"	TEXT NOT NULL
+);
